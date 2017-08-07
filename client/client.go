@@ -74,19 +74,3 @@ func main() {
 	fmt.Print("Started running on http://127.0.0.1:7000\n")
 	fmt.Println(http.ListenAndServe(":7000", nil))
 }
-
-//func tokenToJSON(token *oauth2.Token) (string, error) {
-//	if d, err := json.Marshal(token); err != nil {
-//		return "", err
-//	} else {
-//		return string(d), nil
-//	}
-//}
-//
-//func tokenFromJSON(jsonStr string) (*oauth2.Token, error) {
-//	var token oauth2.Token
-//	if err := json.Unmarshal([]byte(jsonStr), &token); err != nil {
-//		return nil, err
-//	}
-//	return &token, nil
-//}
